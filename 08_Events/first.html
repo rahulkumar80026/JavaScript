@@ -49,20 +49,26 @@
     //     console.log("owl clicked");
     //     e.stopPropagation();
     // }, false)
-    document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault();
-        e.stopPropagation()
-        console.log("google clicked");
-    }, false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
    
     // Small project to use addEventListener
     document.querySelector("#images").addEventListener('click',function(e){
-        console.log(e.target.parentNode);
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName ==='IMG'){
+            console.log(e.target.id);
+        
+
         let removeIt = e.target.parentNode
         removeIt.remove() // first method 
-       
+        }
     },false)
-    
+
+
      // removeIt.parentNode.removeChild(removeIt) // second method to remove images
     </script>
 </body>
