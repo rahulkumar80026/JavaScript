@@ -1,0 +1,1628 @@
+JavaScript is a high-level, dynamic programming language
+used to make web pages interactive.
+
+It runs in the browser (like Chrome, Firefox, etc.)
+ and can also run on the server using platforms like Node.js.
+
+ 1. High-Level Language — what does that mean?
+A high-level language is a programming language that is easy for humans to read,
+ write, and understand. It hides complex details of the computer’s 
+ hardware 
+(like memory management, registers, CPU instructions, etc.).
+
+High-level = Speaking in human-friendly language
+
+Low-level = Speaking in machine language
+
+2. Dynamic Language — what does that mean?
+A dynamic language means the data types are determined at runtime, 
+not in advance. You don’t have to declare types like int, string, etc. 
+JavaScript figures it out for you while the code is running.
+
+-----------------------------------------------------------------
+
+data type in JavaScript
+
+premitive data type (pre define data type/value type data type)
+ string
+ number
+ boolean
+ null
+ undefined
+
+ non primitive data type(user definr data type/reference type data type)
+ Array
+ object
+ class
+ function
+
+
+---------------------------------------------------------------
+keyward
+
+var
+let 
+const
+
+variabes - variables are containers that are use to store the data...
+
+var variable_name = value
+
+>var-->keyword
+>variable_name  - name of variable
+>value  -value of variable
+
+var num = 2
+
+
+---------------------------------------------------
+rules to define variables
+
+  var data
+  var get_data
+  var get-data
+  var get_data99
+
+
+  invalid
+
+  var get data
+  var 99getData
+-----------------------------------------
+difference between var let and const in context of 
+declaraton/initialization
+--------------------------------------------
+operator
+
+operators are the symbols or the keyword that perform operation on the 
+values(operands)
+
+a+b
+
+>airthmetic operator
+
+ +
+ -
+ *
+ **(Exponentiation)
+ /
+ %
+ ++(encrement)
+ --(decrement)
+
+  >Assignment operator
+
+   operator      example      detail
+      =            a=b           a=b
+      +=           a+=b          a=a+b
+      -=           a-=b          a=a-b
+      *=           a*=b          a=a*b
+      /=           a/=b          a=a/b
+      %=           a%=b          a=a%b
+      **=          a**=b         a=a**b
+
+>comparision operarr  it always return a 2 value either 
+true or false
+  
+  operator                   detail
+ 
+  ==                          equal to     
+  ===                         equal value and equal type 
+  !=                          not equal
+  !==                         not equal value and not equal type
+   >                          greter than
+   <                          less than
+   >=                         greater than and equal to
+   <=                         less than and equal to
+
+    logical operator
+
+      >logical and (&&)
+      >logical OR  (||)
+      logical NOT   (!)
+
+      
+        AND
+        T T =T
+        T F =F
+        F T =F
+        F F =F
+
+         OR
+         
+        T T  =T 
+        T F =T
+        F T =T
+        F F =F
+
+        not
+         T =>F
+         F =>T
+  
+   ---------------------------------------
+   if statement
+
+
+    if(condition){
+        //statement
+    }
+    --------------------------
+    if else
+    ------------------------
+    if else if
+  ------------------------------------
+ The ternary operator in JavaScript is a shorthand way to write an 
+ if-else statement. It is called “ternary” because it 
+ takes three operands:
+
+syntax
+condition ? expressionIfTrue : expressionIfFalse;
+---------------------------------------------------------------------
+switch
+
+switch is the alternative of if- else if
+
+switch(expression){
+   
+   case 1:
+   //statement
+   break;
+
+   case 2:
+   //statement
+   break;
+
+   case 3:
+   //statement
+   break;
+
+   case n:
+   //statement
+   break;
+   
+   default:
+   //statement
+
+}
+
+
+
+
+-------------------------------------------------------------------
+task soft copy
+
+
+more than 40 question base on if,if-else,if else-if and switch and ternary  
+oerator sof copy delivered
+----------------------------------------------------------------------
+alert()
+---------------------------------------------------------------------
+confirmed()
+-------------------------------------------------------------------
+promt()
+----------------------------------------------------------------
+implicit and explicit type conversion
+----------------------------------------------------------------
+difference between Number,parseInt,parseFloat
+
+>Number
+Converts the entire string into a number
+Works for integers, floats,
+Returns NaN if the string contains non-numeric characters
+
+Number("123")       // 123
+Number("123.45")    // 123.45
+Number("123abc")    // NaN 
+Number("   45   ")  // 45
+Number("")          // 0
+
+
+parseInt()
+Converts string to integer
+Stops reading as soon as it finds a non-digit
+
+parseInt("123")       // 123
+parseInt("123.45")    // 123  ignores decimal part
+parseInt("123abc")    // 123  stops at "a"
+parseInt("abc123")    // NaN  starts with non-numeric
+parseInt("08", 10)    // 8
+
+
+
+parseFloat()
+Converts string to a floating-point number
+Stops reading at first non-valid float character
+Keeps the decimal part
+parseFloat("123.45")    // 123.45
+parseFloat("123abc")    // 123 
+parseFloat("123.45xyz") // 123.45 
+parseFloat("abc123")    // NaN 
+----------------------------------------------------------
+functions
+
+  >normal functions
+  
+     function function_name(){  
+        console.log("hello my name is neha arora my age is 21)
+     }  
+     function declartion/function defination/function body
+
+
+     function_name()  //functon calling/function invocation
+
+  >function with parameter and arguments
+  >function with return 
+
+---------------------------------------------------------
+Events
+
+>Mouse Events
+Click (onclick)
+Double Click (ondblclick)
+Right Click (oncontextmenu)
+Mouse Hover (onmouseenter)
+Mouse Out (onmouseout)
+Mouse Down (onmousedown)
+Mouse Up (onmouseup)
+
+>Keyboard Events (Note it mostly works in body or form tag)
+Key Press (onkeypress)
+Key Up (onkeyup)
+
+>Window Events(it only worksin body tag)
+Load (onload)
+Resize (onresize)
+Scroll (onscroll)//this can work on div also
+------------------------------------------------------------
+advance function
+ 
+ 1>named function
+
+ function abc(){
+  //statement
+ }
+
+ abc()
+
+2> function expression
+
+
+let fullName = function(){
+  //statement
+}
+fullName()
+
+
+2>Arrow function/fat Arrow function
+
+let fullNane = ()=>{
+  //statement
+}
+
+fullNane()
+--------------------------------------------------------------
+
+                           LOOPS
+
+>for loops
+
+1. Normal Basic for loop
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+Flow: Initialization → Condition check → Execute → Increment → Repeat.
+
+2. Without Initialization
+
+let i = 0;
+for (; i < 5; i++) {
+  console.log(i);
+}
+
+3. Without Condition
+
+for (let i = 0; ; i++) {
+  if (i === 5) break; // Manually break karna padega
+  console.log(i);
+}
+
+4. Without Increment
+
+for (let i = 0; i < 5;) {
+  console.log(i);
+  i++; // Increment manually inside loop
+}
+
+5. Without Initialization + Condition + Increment (Infinite loop)
+
+for (;;) {
+  console.log("Infinite Loop");
+  break; // warna kabhi band nahi hoga!
+}
+     >use case of above
+    
+Part-A:= User input ka wait karna:
+for (;;) {
+  let input = prompt("Enter number greater than 10:");
+  if (input > 10) {
+    console.log("Thank you!");
+    break;
+  }
+}
+
+Part-B:= Server se data milne tak wait karna (pseudo code):
+for (;;) {
+  let data = getDataFromServer();
+  if (data) {
+    console.log("Data received!");
+    break;
+  }
+}
+
+modify upper version
+function getDataFromServer(){
+  return true
+}
+
+for (;;) {
+  let data = getDataFromServer();
+  if (data) {
+    console.log("Data received!");
+    break;
+  }else{
+    console.log("loading.....!!!!")
+  }
+}
+
+console.log("code afetr data comes")
+
+
+
+
+
+>while loops
+>do while loop
+
+
+
+//for 
+
+syntax
+for(initialization;condtion;increment/decrement){
+  //statement
+}
+
+
+
+
+syntax of while loop
+
+
+initialization
+
+while(condition){
+  //statement
+
+  increment/decrement
+}
+
+
+do-while
+syntax
+
+initialization
+
+do{
+  //statement
+
+  increment/decrement
+}while(condition)
+
+--------------------------------------------
+
+Array
+---------------------------------
+Array method 
+
+sort
+reverse
+push
+pop
+shift 
+unshift
+concate
+join
+slice
+  >slice(start,end)
+>splice()
+syntax:
+splice(index,howmany,newvalue)
+
+
+array.splice(start, deleteCount, item1, item2, ...)
+  >var data = ["neha","kunal","mohit"]
+           data.splice(2,0,"unnati","javed")
+           console.log(data)
+
+           var data = ["neha","kunal","mohit","ajay"]
+           data.splice(-2,1,"unnati","javed")
+           console.log(data)
+   
+   now if we only want to delete 
+   var data = ["neha","kunal","mohit","ajay"]
+           data.splice(1,1)
+           console.log(data)
+
+
+var data = ["neha","kunal","mohit","ajay"]
+           data.splice(-2,1)
+           console.log(data)
+
+
+
+isArray
+var data = ["neha","kunal","mohit","ajay"]
+  Array.isArray(data)
+
+
+  indeof
+  syntax
+  indexOf(findItem)
+  indexOf(findItem,start)
+  here start is optional
+
+  example:
+  var data = ["neha","kunal","mohit","ajay","kunal"]
+  console.log(data.indexOf("kunal",2))
+  
+   
+lastIndexf()
+  same like above but it search from last index
+  
+includes
+it is case sensitive. it return true or false and it use in if else
+syntax
+array.includes(searchElement)
+array.includes(searchElement, fromIndex)
+
+example:
+let allowedUsers = ["admin", "manager", "superadmin"];
+let currentUser = "guest";
+
+if (allowedUsers.includes(currentUser)) {
+  console.log("Access granted!");
+} else {
+  console.log("Access denied!");
+}
+
+
+toString
+
+let arr = [1,20,45,78,]
+  let demo = arr.toString()
+   console.log( demo)
+
+
+valueOf
+it is the default function without this we can
+display the array value
+ let arr = [1,20,45,78,]
+  let demo = arr.valueOf()
+
+   console.log( dem)
+
+
+   fill
+   syntax:
+   array.fill(value)
+
+ let arr = [1,20,45,78,]
+let demo = arr.fill(300)
+console.log( demo)
+
+syntax for particular range
+array.fill(value,start,end)
+
+
+let arr = [1,20,45,78,]
+let demo = arr.fill(300,1,3)
+
+ console.log( demo)
+  
+---------------
+calback function
+----------------
+A callback function is a function (It can be any function 
+Anonymous Function, Arrow Function) passed into another 
+function as an argument, which is then invoked inside the outer 
+function to complete some kind of routine or action.
+
+Synchronous – It waits for each operation to complete, 
+after that it executes the next operation.
+
+Asynchronous – It never waits for each operation to complete, 
+rather it executes all operations in the first GO only.
+
+-----------------------------------------------------
+
+some
+it check if any element fullfill the requirement or not
+if fulfill then it return true otherwise false
+syntax
+some(function name)
+
+let arr = [18,20,45,78,]
+let data = arr.some((a)=>{
+   return a>=18 
+})
+
+console.log(data)
+
+
+every
+every is same like a same method it checks that aal the it
+return the result in true or false
+element fullfill the requirement
+let arr = [1,20,45,78,]
+let data = arr.every((a)=>{
+   return a>=18 
+})
+
+console.log(data)
+
+
+find
+it is same as some method but it return the value not true
+or false like some method
+let arr = [1,20,45,78,]
+let data = arr.find((a)=>{
+   return a>=18 
+})
+
+console.log(data)
+
+
+findIndex
+it is same like find method but it return index number
+let arr = [1,20,45,78,]
+let data = arr.findIndex((a)=>{
+   return a>=18 
+})
+
+console.log(data)
+
+
+
+filter()
+it run for every element of an array and which ever fullfill the 
+requirement will return from the filter method
+and we get new new array
+
+let arr = [1,20,45,78,]
+let data = arr.filter((a)=>{
+   return a>=18 
+})
+
+console.log(data)
+
+forEach()
+
+example 1
+
+let data = [2,4,6,65,5,78,89]
+
+data.forEach((value)=>{
+     console.log(value)
+})
+
+
+example 2
+let data = [2,4,6,65,5,78,89]
+
+data.forEach((value,index)=>{
+     console.log("S.NO: "+index+" value: "+value)
+})
+
+Note:
+for each ke pass return keyword nhi hota
+let data = [2,4,6,65,5,78,89]
+
+let demo =data.forEach((a)=>{
+    return a
+})
+
+note:
+forEach meai break nhi chlta
+
+let data = [2,4,6,65,5,78,89]
+demo.forEach((num) => {
+    if (num === 3) {
+    break;
+    }
+    console.log(num);
+  });
+
+
+
+
+  map
+
+  
+
+examplelet data = [2,4,18,65,5,78,89]
+let demo = data.map((value)=>{
+     return  value*10
+})
+console.log(demo)
+
+
+
+
+
+
+
+
+
+
+
+  map and filter example
+  const numbers = [0, 1, 2, 3, 4, 5];
+
+// Using filter – keep only even numbers
+const filtered = numbers.filter(num => num % 2 === 0);
+
+// Using map + filter – map returns number or undefined, then filter removes undefined
+const mappedAndFiltered = numbers
+  .map(num => (num % 2 === 0 ? num : undefined))
+  .filter(Boolean); // removes undefined values
+
+console.log("Using filter:", filtered);
+console.log("Using map + filter:", mappedAndFiltered);
+
+
+
+
+
+
+
+
+JavaScript Array Methods:
+1.sort()
+
+2.reverse()
+
+3.pop()
+
+4.push()
+
+5.shift()
+
+6.unshift()
+
+7.concat()
+
+8.join()
+
+9.slice()
+
+10.splice()
+
+11.isArray()
+
+12.indexOf()
+
+13.lastIndexOf()
+
+14includes()
+
+15.some()
+
+16.every()
+
+17.find()
+
+18.findIndex()
+
+19filter()
+
+20.forEach()
+
+21.toString()
+
+22.valueOf()
+
+23.fill()
+
+24.map
+
+25.reduce
+
+--------------------
+
+custom logic of some predefine function of array methods
+--------------------
+cloaning of array way 
+six ways
+------------------------
+difference between let and var on the basos of scoping
+global scope
+block scope
+functional scope
+
+
+
+
+objects  part 1
+----------------------------
+object part 2
+
+There are two main ways to access values inside a JavaScript object:
+
+>Dot Notation ==>? object.key
+
+>Bracket Notation > object["key"]
+
+==>Use When:
+The key name is a valid identifier (no spaces, no special characters,
+ doesn't start with a number)
+
+You know the key name in advance (static)
+
+>Example:
+
+const person = {
+  name: "Ali",
+  age: 25
+};
+
+console.log(person.name); 
+console.log(person.age);  
+
+
+==>Bracket Notation
+ Syntax:
+
+object["keyName"]
+// OR
+object[variableContainingKey]
+
+
+Use When:
+The key is stored in a variable
+
+The key has spaces, special characters, or starts with a number
+
+You need to access the property dynamically
+
+
+const person = {
+  name: "Ali",
+  age: 25,
+  "home address": "Lahore",
+  "123code": "XYZ"
+};
+
+console.log(person["name"]);    
+console.log(person["home address"]);  
+console.log(person["123code"]); 
+
+
+---------------------------------------
+object part 3
+
+>part 1
+
+whae ke and value are same then write it once
+
+>part 2
+
+let a = "age"
+
+let obj = {
+    [a]:21,
+    name:"neha"
+}
+
+console.log(obj)
+console.log(obj.age)
+
+performing computation
+
+let a = "age"
+
+let obj = {
+    [a+"Person"]:21,
+    name:"neha"
+}
+
+console.log(obj)
+
+>part 3
+
+new way of function defining
+
+let obj = {
+    student(age){
+      console.log(age)
+    }
+}
+
+obj.student(2)
+obj["student"](4)
+
+part 4
+
+defineing a function that reurns an object
+
+let num1 = 2
+let num2 = 2
+
+
+
+function getTotal(a,b){
+    let total = a+b
+    return{
+       total,
+       success:true
+    }
+}
+
+
+
+console.log(getTotal(num1,num2))
+----------------------------
+
+
+------------------------------
+
+string
+-------------------------------
+
+string Methods
+
+toUpperCase
+toLowerCase
+includes   -->it return true or false
+startsWith
+endsWith
+search  -->it is like include but return position if 
+we get otherwise it return -1,it is same like indexOf but still have some difference
+it also accept regular expression
+example
+let text = "My ID is AB123XY";
+let index = text.search(/\d/);  // \d matches any digit (0–9)
+console.log(index); // Output: 11
+
+
+
+match it is same like search but it returns an array
+example
+let data = "hello javasecrip"
+
+demo = data.match(/e/g)
+console.log(demo)
+
+indexOf  -->it return index of element ,it is same like search
+lastIndexOf
+replace
+example
+let data = "hello javasecrip"
+demo = data.replace("e","o")
+console.log(demo)
+
+trim
+
+let str = "      javascript    "
+let a = str.trim()
+
+console.log(a)
+
+charAt()
+let str = "javascript"
+let a = str.charAt(3)
+
+console.log(a)
+
+
+https://web.alfredstate.edu/faculty/weimandn/miscellaneous/ascii/ascii_index.html
+
+charCodeAt
+let str = "javascript"
+let a = str.charCodeAt(1)
+
+console.log(a)
+
+fromCharCode
+let b= String.fromCharCode(65)
+console.log(b)
+
+concat
+let str = "javascript"
+let str2 = "hello" 
+
+let ste3 = str2.concat(str)
+console.log(ste3)
+
+
+cconcat
+
+split
+
+
+toString
+---------------------------------------------
+
+call apply and bind
+---------------------------------------
+optional chaining
+
+The optional chaining ?. is a safe way to access nested object properties, even if an 
+intermediate property doesn’t exist.
+
+The optional chaining ?. stops the evaluation if the value before ?. is undefined or null 
+and returns undefined.
+
+
+const customerDetail = {
+  userId: '123456',
+  account: {
+    accountToken: 'ABC1234',
+    holder: {
+      profile: {
+        firstName: 'Mahi',
+        lastName: 'Khurana',
+        birthDate: '1990-10-10',
+      }
+    }
+  },
+  contacts: {
+    address: {
+      city: 'Delhi',
+      state: 'Delhi',
+      countryName: 'India'
+    }
+  }
+};
+----------------------------------
+strict mood
+
+//-->Invalid Example 1: Undeclared Variable
+"use strict";
+
+x = 10; //ReferenceError: x is not defined
+console.log(x);
+
+
+//--> Invalid Example 2: Duplicate Function Parameters
+
+"use strict";
+
+function test(a, a) {
+  console.log(a);
+}
+
+test(1, 2);
+
+
+Invalid Example 3: Assigning to Read-Only Property
+"use strict"
+
+const obj = {};
+Object.defineProperty(obj, "name", {
+  value: "Neha",
+  writable: false
+});
+
+obj.name = "Anu"
+console.log(obj)
+
+--------------------
+
+this 
+
+  >this in global
+
+
+  >this in function
+      >strict/non strict
+      >this subsitution
+
+ >value of this keyword depends on how the function is called     
+
+ >this in object 
+
+ >this in arroe function and arrow function in object
+
+ >this in side a dom element
+
+
+ ------------------------
+
+
+
+
+
+how js work
+-------------------------------------
+
+ hoisting
+
+----------------------------------------------
+
+why js is called prototype base object oriented programming language  ?
+
+-----------
+
+javascript is prototype programming language
+---------------------------------------
+scope
+
+Scope in JavaScript means where you can use a variable in your code.
+
+It tells you which parts of the program can see or use a particular variable.
+
+-------------
+lexical Scope
+-----------------
+closure
+
+In JavaScript, a closure is a function that references 
+variables in the outer scope from its inner scope.
+
+
+
+
+The closure preserves the outer scope inside its 
+inner scope even after outer function is returned.
+
+
+
+when an inner function wants to live beyond the life of its outer function even when its
+return is know as closure
+-----------------------------------------
+
+constructot function
+
+What is a Constructor Function in JavaScript?
+A constructor function is a regular JavaScript function used to create 
+and initialize objects.
+
+constructor functions were the primary way to implement object-oriented behavior in JavaScript 
+before class introduced in ES6 (2015).
+
+>It uses the this keyword to set properties.
+
+>It must be called with the new keyword.
+
+>Each object created has its own copy of methods unless attached to the prototype.
+
+
+example 1
+function User(name){
+    this.name = name;
+    this.getDetail = function(){
+        console.log(this.name);
+    }
+}
+
+let user1 = new User('Nisha');
+user1.getDetail();
+
+example 2
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHello = function() {
+    console.log("Hi, I'm " + this.name);
+  };
+}
+
+const p1 = new Person("Neha", 22);
+p1.sayHello(); // Output: Hi, I'm Neha
+
+
+---------------------use case for prototype----------------------
+
+ 1>add new methods onto the prototype property
+ 2>Inheritance(prototypical Inheritance)
+
+
+
+
+
+
+-----------------------------------------------------------------
+prototype in constructor function
+
+function User(name) {
+  this.name = name;
+}
+
+// Adding method to the prototype (so all objects share the same function)
+User.prototype.sayHello = function() {
+  console.log("Hi " + this.name);
+};
+
+// Creating objects
+let user1 = new User("Neha");
+let user2 = new User("Raj");
+
+// Calling the method
+user1.sayHello();  // Output: Hi Neha
+user2.sayHello();  // Output: Hi Raj
+
+
+
+-->If you write the method inside the constructor like this:
+
+function User(name) {
+  this.name = name;
+  this.sayHello = function() {
+    console.log("Hi " + this.name);
+  };
+}
+Then every object will get its own copy of sayHello → More memory usage.
+
+But if you attach it to User.prototype, then:
+All instances (user1, user2, etc.) share the same method.
+More memory-efficient and better practice for reusable methods.
+
+--------------------------------------------------------
+
+
+ --------------------protoype in constructor function for property-------------------------------
+// Concepts You Need to Understand:
+ Prototype Chain
+ Own Property vs Prototype Property
+ Property Shadowing
+
+function User(name){
+}
+
+User.prototype.name = "Nisha";
+
+let user1 = new User();
+let user2 = new User();
+
+user1.name = "Sneha";
+console.log(user1.name);  // Sneha
+console.log(user2.name);  // Nisha
+
+Explanation:
+
+
+Concepts to Understand:
+
+>Prototype Chain
+>Own Property vs Prototype Property
+>Property Shadowing
+
+>> Step-by-Step Explanation:
+
+>> 1. User.prototype.name = "Nisha";
+You’re saying: "All objects created from User should use Nisha as the default name, 
+unless they have their own name."
+>> 2. let user1 = new User();
+user1 is created.
+
+It does not have its own name, so if we try user1.name, it will look in the prototype.
+
+Prototype has name = "Nisha", so it would return "Nisha" — for now.
+
+>> 3. user1.name = "Sneha";
+Now, you're creating an own property called name on the user1 object.
+
+This own property shadows (hides) the prototype’s name property.
+
+>> 4. console.log(user1.name);
+JavaScript first looks in user1's own properties.
+
+Finds name = "Sneha".
+
+>> Output: Sneha
+
+>> 5. console.log(user2.name);
+user2 does not have its own name property.
+
+JavaScript checks the prototype chain.
+
+Prototype says name = "Nisha".
+
+>>Output: Nisha
+
+
+
+ >>Visual Representation:
+
+user1 = {
+  name: "Sneha",   <--- Own property
+  __proto__: {
+    name: "Nisha"  <--- From prototype
+  }
+}
+
+user2 = {
+  __proto__: {
+    name: "Nisha"  <--- From prototype (no own name)
+  }
+}
+
+-------------------------------------------------
+
+What is Property Shadowing in JavaScript?
+
+Property Shadowing happens when an object has a property with the same name as a property in 
+its prototype. The object’s own property then hides (or "shadows") the one in the prototype.
+
+function User() {}
+
+User.prototype.name = "Nisha";  // prototype property
+
+let user1 = new User();
+user1.name = "Sneha";  // own property
+
+console.log(user1.name); // Sneha → own property shadows prototype one
+
+
+Important:
+Shadowing doesn't delete or change the prototype property — it just hides it when accessed through 
+that object.
+
+If you delete user1.name, then the prototype’s name will become visible again.
+
+delete user1.name;
+console.log(user1.name); // Output: Nisha → from prototype again
+
+
+code:
+function User() {}
+
+User.prototype.name = "Nisha";  // prototype property
+
+let user1 = new User();
+user1.name = "Sneha";  // own property
+delete user1.name;
+console.log(user1.name); // Sneha → own property shadows prototype one
+----------------------------------------------------------------------------
+
+
+“Don’t use primitive types in the prototype, use them on the object itself”
+
+>Primitive Types:
+  string, number, boolean, null, undefined, symbol
+   These are copied by value.
+
+
+>Reference Types:
+   objects, arrays, functions
+   These are copied by reference (i.e., they share the same memory).
+
+   >>What Happens When You Put a Primitive in the Prototype?
+   
+    function User() {}
+User.prototype.name = "Nisha";
+
+let user1 = new User();
+let user2 = new User();
+
+user1.name = "Sneha";  // This creates a new property directly on user1
+
+console.log(user1.name); // "Sneha" ← from own property
+console.log(user2.name); // "Nisha" ← from prototype
+
+
+So what's the problem?
+The moment you assign a new value (user1.name = "Sneha"), JavaScript creates a new own
+ property on that object.
+
+It shadows or hides the name in the prototype.
+
+That makes the prototype value almost useless because each object can override it.
+
+So your te
+
+>>>> The BIGGER Problem: Reference Types on Prototype (Like Arrays)
+function User() {}
+User.prototype.friends = [];
+
+let user1 = new User();
+let user2 = new User();
+
+user1.friends.push("Aman");
+
+console.log(user1.friends); // ["Aman"]
+console.log(user2.friends); // ["Aman"]  WRONG!
+
+Why?
+friends is an array (reference type).
+Since it's on the prototype, both user1 and user2 share the same array.
+So changing it from one object affects all others.
+
+>>>>Correct Way (Use constructor for data):
+function User(name) {
+  this.name = name;      // each object gets its own 'name'
+  this.friends = [];     // each object gets its own 'friends' array
+}
+
+let user1 = new User("Neha");
+let user2 = new User("Sneha");
+
+user1.friends.push("Aman");
+
+console.log(user1.friends); // ['Aman']
+console.log(user2.friends); // []  safe
+
+
+Conclusion:
+Avoid putting primitive types (like name) in the prototype. They’ll be shadowed when changed.
+
+Never put reference types (like arrays/objects) in the prototype — they’ll be shared by all 
+objects and cause bugs.
+
+Use the prototype for methods, not for per-instance data.
+
+----------------------------------------------------------------------
+--------------------------prototype in Array
+let users = ["neha", "Sneha"];
+
+Array.prototype.testMethod = function() {
+    console.log('Some random method');
+}
+
+---------------------------------------------------------
+Runner.prototype.gameOver = () => {}
+------------------------------------------------
+// Inheritance(prototypical Inheritance)
+
+function Phone(){
+    this.modelNumber = "ggggg";
+    this.getModelNumber = function(){
+        return this.modelNumber;
+    }
+}
+
+function Samsung(){
+    this.modelNumber = "XXX-YYYY";
+    this.latestFeature = function(){
+        console.log(`Samsung has galaxy z foldable smartphone`);
+    }
+}
+
+Samsung.prototype = new Phone();
+let obj = new Samsung()
+
+console.log(obj.getModelNumber())
+-----------------------------------------------------
+JavaScript is Asynchronous because:
+JavaScript can start a task (like fetching data from a server), 
+and continue executing the rest of the code without waiting for that task to finish.
+
+This is possible because of:
+Event Loop
+Callback functions
+Promises
+Async/Await
+
+
+
+What is Synchronous in JavaScript?
+Synchronous code is executed line-by-line.
+Each statement waits for the previous one to finish before executing.
+
+console.log("Start");
+
+console.log("Processing...");
+
+console.log("End");
+
+ What is Asynchronous in JavaScript?
+Asynchronous JavaScript means that some parts of your code can run in the background, allowing the
+ program to continue running without getting blocked.
+
+Asynchronous code allows JavaScript to continue executing the next line while it waits 
+for a time-consuming task (like an API call, file read, or timer) to complete.
+
+JavaScript uses asynchronous programming to avoid blocking the main thread.
+
+It uses mechanisms like setTimeout, Promises, and async/await to handle tasks 
+that take time (like API calls, reading files, etc.).
+
+This makes JavaScript fast, efficient, and non-blocking, even though it's single-threaded.
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Async Task Done");
+}, 2000);
+
+console.log("End");
+-----------------
+ Synchronous:
+
+function blockCode() {
+  for (let i = 0; i < 1e9; i++) {} // heavy loop
+  console.log("Loop done");
+}
+
+console.log("Start");
+blockCode();
+console.log("End");
+
+//This will block the browser (or Node.js) until the loop finishes.
+What is 1e9 in JavaScript?
+1e9 is scientific notation in JavaScript.
+
+It stands for:
+
+1 × 10⁹ = 1,000,000,000
+
+1e9 === 1000000000 // true
+
+
+--------------------------
+What is a Promise in JavaScript?
+A Promise in JavaScript is a special object used to handle asynchronous operations.
+It represents a value that may be available now, in the future, or never.
+
+A Promise is a way to handle tasks in JavaScript that take time, 
+like fetching data from a server.
+
+
+A Promise is a tool in JavaScript that helps us work with future results of tasks like downloading, reading, or 
+waiting — without blocking the rest of the code.
+
+
+------------------------------
+
+
+
+promise.all
+
+---------------
+
+promise.race
+
+Promise.race() is a method that returns a promise that settles 
+(resolves or rejects) as soon as one of the promises in the 
+iterable settles
+
+Think of it as a race – whichever promise (resolve or reject) 
+finishes first, wins the race and decides the outcome.
+
+Syntax
+Promise.race(iterable)
+iterable: An array (or any iterable object) of promises (or values).
+
+ explain
+The first promise to settle (either resolve or reject) wins.
+
+The returned promise takes on the state (fulfilled or rejected)
+ of that first settled promise.
+
+  Example :A
+ ----------
+ const promise1 = new Promise((resolve) => {
+  setTimeout(() => resolve("Resolved after 2 seconds"), 2000);
+});
+
+const promise2 = new Promise((resolve) => {
+  setTimeout(() => resolve("Resolved after 1 second"), 1000);
+});
+
+Promise.race([promise1, promise2])
+  .then((result) => {
+    console.log("Race winner:", result);
+  })
+  .catch((error) => {
+    console.log("Race error:", error);
+  });
+
+  Example :B What If One Rejects First
+  --------------------------------------------
+  const promise1 = new Promise((resolve) => {
+  setTimeout(() => resolve("Resolved after 2 seconds"), 2000);
+});
+
+const promise2 = new Promise((_, reject) => {
+  setTimeout(() => reject("Rejected after 1 second"), 1000);
+});
+
+Promise.race([promise1, promise2])
+  .then((result) => {
+    console.log("Race winner:", result);
+  })
+  .catch((error) => {
+    console.log("Race error:", error);
+  });
+ Timeout for Fetch
+-----------------------------------
+const fetchData = fetch("https://jsonplaceholder.typicode.com/todos/1");
+
+const timeout = new Promise((_, reject) => {
+  setTimeout(() => reject("Request timed out"), 3000);
+});
+
+Promise.race([fetchData, timeout])
+  .then((res) => res.json())
+  .then((data) => console.log("Data:", data))
+  .catch((error) => console.error("Error:", error));
+
+  //If the fetch takes longer than 3 seconds, the timeout "wins" and 
+  throws an error.
+  -------------------------------------
+  What is Promise.allSettled()?
+Promise.allSettled() is a method in JavaScript that takes an array of promises and waits for all of them to complete, regardless of
+ whether they are fulfilled or rejected.
+
+ A single promise that resolves when all input promises have settled 
+ (either fulfilled or rejected).
+
+
+Syntax:
+ Promise.allSettled([promise1, promise2, promise3])
+  .then((results) => {
+    // results is an array of objects
+  });
+------------------------------------------
+asyn await
+
+JavaScript is asynchronous by nature. That means it doesn’t wait 
+for tasks like API calls or file reads to complete before moving on. 
+To handle such tasks, JavaScript uses Promises.
+
+But promises can be hard to read and manage, especially when there 
+are multiple .then() calls.
+
+That’s where async and await make code cleaner and more readable.
+
+What is async?
+--------------
+The async keyword is added before a function to make it return a Promise.
+
+Even if you return a normal value from an async function, it gets wrapped in a promise.
+
+async function greet() {
+  return "Hello!";
+}
+
+greet().then((msg) => console.log(msg));  // Output: Hello!
+
+ What is await?
+await is used inside async functions only.
+
+It pauses the execution of the async function 
+until the Promise is resolved or rejected.
+
+It makes async code look like synchronous code, 
+making it easier to write and understand.
+
+
+ Normal Promise-based function
+ ------------------------
+
+ function getUserData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("👤 User data received");
+    }, 2000); // Simulating 2 sec delay
+  });
+}
+
+//This function returns a promise that resolves after 2 seconds.
+// Step 2: Using .then() — Traditional Promise way
+
+getUserData().then((data) => {
+  console.log(data); // Output after 2 seconds:  User data received
+});
+//But this can become messy if we have more async calls.
+
+//Step 3: Using async and await
+async function showUser() {
+  console.log(" Fetching user...");
+  const data = await getUserData();  // Waits for 2 seconds here
+  console.log(data);
+  console.log(" Done fetching user.");
+}
+
+showUser();
